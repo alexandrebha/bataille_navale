@@ -4,24 +4,27 @@
 #include "game.h" // Include game.h for common structures
 
 /**
- * Affiche le plateau de jeu.
- * @param board Le plateau de jeu à afficher.
- * @param boats Tableau des bateaux.
- * @param showBoats Indique si les bateaux doivent être montrés.
- * @param isUserBoard Indique si c'est le plateau du joueur.
+ * Displays the game board.
+ * @param board The game board to display.
+ * @param boats Array of boats.
+ * @param showBoats Indicates whether the boats should be shown.
+ * @param isUserBoard Indicates if it's the player's board.
  */
+
 void printBoard(GameBoard board, Boat *boats, int showBoats, bool isUserBoard);
 
 /**
- * Affiche le résultat du jeu.
- * @param game L'état actuel du jeu.
+ * Displays the result of the game.
+ * @param game The current state of the game.
  */
+
 void displayGameResult(const Game *game);
 
 /**
- * Affiche les plateaux de jeu pour les deux joueurs.
- * @param game L'état actuel du jeu.
+ * Displays the game boards for both players.
+ * @param game The current state of the game.
  */
+
 void displayGameBoards(const Game *game);
 
 #endif
